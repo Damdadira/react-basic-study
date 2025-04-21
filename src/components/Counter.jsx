@@ -1,21 +1,21 @@
 import { useState } from 'react';
 
-export default function Counter() {
+export default function Counter({total, onClick}) {
   const [count, setCount] = useState(0);
 
   return(
     <div className='counter'>
-      <span className='number'>{count}</span>
+      <p className='number'>
+        {count}
+        <span className='total'>/{total}</span>
+      </p>
       
       {/* 하나씩 증가 */}
-      <button className='button' onClick={() => setCount(count + 1)}>Add +</button>
-      
-      {/* 이전 상태 유지 */}
-      {/* <button className='button' onClick={() => {
-        setCount((prev) => prev + 1)
-        setCount((prev) => prev + 1)
-        }}>Add +
-      </button> */}
+      <button className='button' onClick={() => {
+        setCount(prev => prev + 1)
+        onClick()
+        }}>
+      Add +</button>
     </div>
   )
 }
