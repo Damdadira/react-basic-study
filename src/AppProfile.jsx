@@ -1,7 +1,7 @@
 import './App.css';
 import Profile from './components/Profile';
 
-function AppProfile() {
+export default function AppProfile() {
   const handleClick = (e) => {
     console.log(e)
   }
@@ -28,5 +28,3 @@ function AppProfile() {
     </>
   );
 }
-
-export default AppProfile;
