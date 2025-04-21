@@ -2,9 +2,13 @@ import './App.css';
 import Profile from './components/Profile';
 
 function AppProfile() {
-  
+  const handleClick = (e) => {
+    console.log(e)
+  }
+
   return(
     <>
+      <button onClick={handleClick}>버튼</button>
       <Profile 
         image='https://images.unsplash.com/photo-1732165783074-b0f7c123982b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMDB8fHxlbnwwfHx8fHw%3D'
         name='James Kim' 
