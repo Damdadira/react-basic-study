@@ -5,13 +5,15 @@ import reportWebVitals from './reportWebVitals';
 import AppJSX from './AppJSX';
 import AppProfile from './AppProfile';
 import AppCounter from './AppCounter';
+import AppProducts from './AppProducts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <AppJSX /> */}
     {/* <AppProfile /> */}
-    <AppCounter />
+    {/* <AppCounter /> */}
+    <AppProducts />
   </React.StrictMode>
 );
 
