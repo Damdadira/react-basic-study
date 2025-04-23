@@ -6,6 +6,7 @@ import AppJSX from './AppJSX';
 import AppProfile from './AppProfile';
 import AppCounter from './AppCounter';
 import AppProducts from './AppProducts';
+import AppClass from './AppClass';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,8 @@ root.render(
     {/* <AppJSX /> */}
     {/* <AppProfile /> */}
     {/* <AppCounter /> */}
-    <AppProducts />
+    {/* <AppProducts /> */}
+    <AppClass />
   </React.StrictMode>
 );
 
